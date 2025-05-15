@@ -33,5 +33,10 @@ show()
 
 #Finding the frauds
 mappings = som.win_map(x)
-frauds = np.concatenate((mappings[(8,1)], mappings[(6,8)]) , axis = 0)
+frauds = np.concatenate((mappings[(5,3)], mappings[(8,3)]) , axis = 0)
 frauds = sc.inverse_transform(frauds)
+
+
+
+
+customers = dataset.iloc[:, 1:].values
